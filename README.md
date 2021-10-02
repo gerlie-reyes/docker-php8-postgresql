@@ -6,7 +6,7 @@ PostgresQL database.
 ## Getting Started
 
 1. Clone this repository
-2. Copy config-sample.php to config.php
+2. Copy app/config-sample.php to app/config.php
 3. Copy database.env.example to database.env
 4. Change directory to the cloned folder
 5. `docker-compose up`
