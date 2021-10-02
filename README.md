@@ -16,18 +16,18 @@ PostgresQL database.
 ### Login to postgres database
 
 `docker-compose run database bash` - to login to database container shell\
-`psql --host=database --username=admin --dbname=docker_test`\
+`psql --host=database --username=admin --dbname=docker_test`
 
 Enter password when promted: dbpass
 
 ### Create users table
 
 ```
-CREATE TABLE users (user_id serial PRIMARY KEY,\
-username VARCHAR ( 50 ) UNIQUE NOT NULL,\
-password VARCHAR ( 50 ) NOT NULL,\
-email VARCHAR ( 255 ) UNIQUE NOT NULL,\
-created_on TIMESTAMP NOT NULL,\
+CREATE TABLE users (user_id serial PRIMARY KEY,
+username VARCHAR ( 50 ) UNIQUE NOT NULL,
+password VARCHAR ( 50 ) NOT NULL,
+email VARCHAR ( 255 ) UNIQUE NOT NULL,
+created_on TIMESTAMP NOT NULL,
 last_login TIMESTAMP);
 ```
 
